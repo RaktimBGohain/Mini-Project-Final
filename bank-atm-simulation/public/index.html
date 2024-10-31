@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bank ATM Simulation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="atm-container">
+        <h1>ATM Simulation</h1>
+        <form id="login-form">
+            <input type="text" id="account-number" placeholder="Account Number" required />
+            <input type="password" id="pin" placeholder="PIN" required />
+            <button type="submit">Login</button>
+        </form>
+        <div id="balance-section" style="display:none;">
+            <p id="balance"></p>
+            <form id="deposit-form">
+                <input type="number" id="deposit-amount" placeholder="Deposit Amount" required />
+                <button type="submit">Deposit</button>
+            </form>
+            <form id="withdrawal-form">
+                <input type="number" id="withdrawal-amount" placeholder="Withdrawal Amount" required />
+                <button type="submit">Withdraw</button>
+            </form>
+            <form id="transfer-form">
+                <input type="text" id="to-account" placeholder="Recipient Account Number" required />
+                <input type="number" id="transfer-amount" placeholder="Transfer Amount" required />
+                <button type="submit">Transfer</button>
+            </form>            
+            <button onclick="logout()">Logout</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
